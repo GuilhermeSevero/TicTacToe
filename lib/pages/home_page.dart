@@ -91,28 +91,8 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return new Scaffold(
         appBar: new AppBar(
-          title: new Text("Too Hardest Tic Tac Toe"),
+          title: new Text("Jogo da Véia"),
         ),
-        persistentFooterButtons: [
-          new RaisedButton(
-            child: new Text(
-              "Mudar Modo",
-              style: new TextStyle(color: Colors.white, fontSize: 20.0),
-            ),
-            color: Colors.red,
-            padding: const EdgeInsets.all(15.0),
-            onPressed: changeMode,
-          ),
-          new RaisedButton(
-            child: new Text(
-              "Reiniciar",
-              style: new TextStyle(color: Colors.white, fontSize: 20.0),
-            ),
-            color: Colors.indigo,
-            padding: const EdgeInsets.all(15.0),
-            onPressed: resetGame,
-          )
-        ],
         body: new Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -153,6 +133,26 @@ class _HomePageState extends State<HomePage> {
               ),
             )
           ],
-        ));
+        ),
+        persistentFooterButtons: [
+          new RaisedButton(
+            child: new Text(
+              "Mudar Modo",
+              style: new TextStyle(color: Colors.white, fontSize: 20.0),
+            ),
+            color: Colors.red,
+            padding: const EdgeInsets.all(15.0),
+            onPressed: changeMode,
+          ),
+          new RaisedButton(
+            child: new Text(
+              "Reiniciar",
+              style: new TextStyle(color: Colors.white, fontSize: 20.0),
+            ),
+            color: Colors.indigo,
+            padding: const EdgeInsets.all(15.0),
+            onPressed: resetGame,
+          )
+        ]);
   }
 }
