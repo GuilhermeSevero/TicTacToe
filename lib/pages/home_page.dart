@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:tictactoe/src/custom_dailog.dart';
+import 'package:tictactoe/components/custom_dailog.dart';
 import 'package:tictactoe/src/game_button.dart';
 import 'package:tictactoe/src/game.dart';
 
