@@ -55,7 +55,7 @@ class Game {
   }
 
   int checkWinner() {
-    Set<int> winners;
+    Set<int> winners = {};
 
     winners.add(_checkLayer(0, 1, 2));
     winners.add(_checkLayer(3, 4, 5));
